@@ -11,8 +11,6 @@ import {BrowserRouter} from "react-router-dom";
 import Route from "react-router-dom/es/Route";
 
 
-
-
 // funtion App
 const App = () => {
   // qui retourne toujour UNE div
@@ -22,8 +20,8 @@ const App = () => {
       <Header />
       <Navbar />
       <div className='app-wrapper-content'>
-          <Route path="/profile" component={Profile}/>
-          <Route path="/dialogs" component={Dialogs}/>
+          <Route path="/profile" component={Profile}/>{/*pour afficher le lien exact url onutilise le exact path=*/}
+          <Route path="/dialogs" component={Dialogs}/> {/*/dialogs/spam/blabla*/}
           <Route path="/news" component={News}/>
           <Route path="/music" component={Music}/>
           <Route path="/settings" component={Settings}/>
