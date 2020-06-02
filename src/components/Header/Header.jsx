@@ -3,7 +3,7 @@ import s from'./Header.module.css';
 
 const Header = () => {
    return <header className={s.header}>
-    <img src="https://about.canva.com/wp-content/uploads/sites/3/2016/08/logos-1.png"></img>
+    <img src="https://chamsdigital.fr/wp-content/uploads/2020/05/MailResponseLogo.png"></img>
     </header>
 }
 

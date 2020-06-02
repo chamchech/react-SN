@@ -5,8 +5,8 @@ import MyPosts from "../MyPosts/MyPosts";
 
 const ProfileInfo = () => {
     return <div>
-        <div>
-            <img src='https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg'></img>
+        <div className={s.imgProfile}>
+            <img src='https://chamsdigital.fr/wp-content/uploads/2019/07/RKman-3.png'></img>
         </div>
         <div className={s.descriptionBlock}>
             ava + description

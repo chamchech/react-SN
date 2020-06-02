@@ -1,3 +1,7 @@
 .descriptionBlock{
     padding: 10px;
 }
+.imgProfile img{
+    width: 500px;
+    height: auto;
+}
