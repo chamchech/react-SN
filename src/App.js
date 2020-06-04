@@ -11,10 +11,8 @@ import {BrowserRouter} from "react-router-dom";
 import Route from "react-router-dom/es/Route";
 import {addPost, updateNewPostText} from "./Redux/state";
 
-// funtion App
+// function App
 const App = (props) => {
-
-
     // qui retourne toujour UNE div
   return (
 

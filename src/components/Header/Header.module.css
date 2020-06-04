@@ -1,11 +1,12 @@
 
 .header{
     grid-area: h;
-    background-color: rgb(51, 163, 152);
-    opacity: 0.9;
-    text-align: right;
-    position: fixed;
     width: 100%;
+    z-index: 3000;
+    background-color: #ffffff;
+    opacity: 0.8;
+    position: fixed;
+
     }
     .header img{
         width: 150px;
