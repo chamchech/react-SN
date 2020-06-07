@@ -22,7 +22,7 @@ const App = (props) => {
       <div className='app-wrapper-content'>
           {/*<Route path="/profile" component={Profile}/>*/}{/*pour afficher le lien exact url onutilise le exact path=*/}
           {/*<Route path="/dialogs" component={Dialogs}/>*/} {/*/dialogs/spam/blabla*/}
-          <Route path="/profile" render={() => <Profile profilePage={props.state.profilePage} addPost={props.addPost} updateNewPostText={props.updateNewPostText} />}/>
+          <Route path="/profile" render={() => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch}/>}/>
           <Route path="/dialogs" render={() => <Dialogs state={props.state.dialogsPage}/>}/>
           <Route path="/news" render={() => <News/>}/>
           <Route path="/music" render={() => <Music/>}/>
