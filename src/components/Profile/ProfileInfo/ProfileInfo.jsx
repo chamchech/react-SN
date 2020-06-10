@@ -6,7 +6,7 @@ import MyPosts from "../MyPosts/MyPosts";
 const ProfileInfo = () => {
     return <div>
         <div className={s.imgProfile}>
-            <img src='https://chamsdigital.fr/wp-content/uploads/2019/07/RKman-3.png'/>
+            <img src='https://chamsdigital.fr/wp-content/uploads/2019/07/RKman-3.png' alt='logo cham's/>
         </div>
         <div className={s.descriptionBlock}>
             ava + description
