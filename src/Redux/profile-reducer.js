@@ -1,7 +1,19 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
 
-const profileReducer = (state, action) => {
+//State est vide quand la initialisation se fait la premiere fois par redux on lui precise de partir d'un objet initiale
+let initialState = {
+        posts: [
+            {id: 1, message: 'Hi, how are you?', likeCount: 12},
+            {id: 2, message: 'It\'s my first post', likeCount: 20},
+            {id: 3, message: 'What you want bro?', likeCount: 10},
+            {id: 4, message: 'Here I am', likeCount: 6},
+        ],
+        newPostText: 'chamsdigital.fr'
+};
+
+const profileReducer = (state= initialState, action) => {
+
 switch (action.type) {
     case ADD_POST:
     let newPost = {
