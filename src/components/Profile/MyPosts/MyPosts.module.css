@@ -1,7 +1,7 @@
 .postsBlock{
-    padding: 10px;
+    border-top: black solid 2px;
 }
 
 .posts{
-    margin-top: 10px;
+width: 400px;
 }

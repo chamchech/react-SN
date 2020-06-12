@@ -20,16 +20,22 @@ let initialState = {
     ],
     newMessageBody: ""
 }
+
 const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_NEW_MESSAGE_BODY:
-            state.newMessageBody = action.body;
-            return state;
+            return {
+                ...state, //spread copy
+                newMessageBody: action.body
+                //messages:[...state.messages] on ne modifier pas le text du coup pas la peine de copier
+            };
         case SEND_MESSAGE:
-            let body = state.newMessageBody;
-            state.newMessageBody = '';
-            state.messages.push({id: 7, message: body});
-            return state;
+            let body  = state.newMessageBody;
+            return {
+                ...state,//spread copy
+                newMessageBody: '',
+                messages:[...state.messages,{id: 7, message: body}] // par contre ici on modifie
+            };
         default:
             return state;
     }
