@@ -39,7 +39,6 @@ const profileReducer = (state = initialState, action) => {
         /* this._callSubscriber(this._state);*/
     }
 }
-
 //Si notre function retourne juste quelque chose on peux la factoriser ainsi
 export const addPostActionCreator = () => ({type: ADD_POST})
 export const updateNewPostTextActionCreator = (text) => ({type: UPDATE_NEW_POST_TEXT, newText: text})
